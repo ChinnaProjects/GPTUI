@@ -11,10 +11,11 @@ export default function Register() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.post(
-        "https://your-backend-url.vercel.app/api/register",
-        { name, email, password }
-      );
+      const response = await axios.post("https://gtpbe.vercel.app/register", {
+        name,
+        email,
+        password,
+      });
       setMessage("Registration Successful");
     } catch (error) {
       setMessage("Registration Failed");

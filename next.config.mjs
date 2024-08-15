@@ -1,9 +1,9 @@
-module.exports = {
+export default {
   async rewrites() {
     return [
       {
-        source: "/api/:path*",
-        destination: "https://your-backend-url.vercel.app/api/:path*",
+        source: "/register",
+        destination: "https://gtpbe.vercel.app/register",
       },
     ];
   },
